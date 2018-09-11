@@ -1,4 +1,4 @@
-package com.example.razli.pense
+package com.example.razli.pense.utils
 
 class Repository {
 
@@ -7,7 +7,8 @@ class Repository {
 
         @JvmStatic
         fun getInstance(): Repository {
-            return INSTANCE ?: Repository().apply { INSTANCE = this }
+            return INSTANCE
+                    ?: Repository().apply { INSTANCE = this }
         }
 
         @JvmStatic

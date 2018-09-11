@@ -1,4 +1,4 @@
-package com.example.razli.pense
+package com.example.razli.pense.utils
 
 interface BasePresenter {
 
