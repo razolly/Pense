@@ -7,9 +7,13 @@ interface ExpenseOverviewContract {
 
     interface View : BaseView<Presenter> {
 
+        fun showUpdatedExpense(newExpense: Double)
+
     }
 
     interface Presenter : BasePresenter {
+
+        fun addNewExpense(expense: Double)
 
     }
 
